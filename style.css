@@ -1,0 +1,151 @@
+* {
+    transition: all 0.3s;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, rgba(79, 51, 176, 1), rgba(210, 53, 165));
+
+}
+
+.btn-num {
+    color: #f8fafb;
+    background-color: #1b2f38;
+    border: none;
+    outline: none;
+}
+
+.btn-operator {
+    background-color: #2e1f39;
+    color: #aa00a4;
+    border: none;
+    outline: none;
+}
+
+.card {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #000;
+    background-color: #071115;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 55px;
+    border-radius: 50%;
+    height: 55px;
+    margin: 5px;
+    border: none;
+    font-size: 20px;
+}
+
+.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+
+}
+
+.display {
+    background-color: #071115;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    display: flex;
+    justify-content: start;
+    width: 90%; 
+    border-radius: 5px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+}
+
+.Dark {
+    background-color: white;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#result {
+    background-color: #223323;
+    color: #ffffff;
+    margin: 4px;
+}
+
+#C {
+    background-color: #2d191e;
+    color: #bd3740;
+
+}
+
+#C.dark-mode {
+    background-color: #ffd5d8;
+    color: fc4552;
+}
+
+.card.dark-mode {
+    background-color: #fff;
+}
+
+.btn-operator.dark-mode {
+    background-color: #ffd0fd;
+    color: f96;
+}
+
+.btn-num.dark-mode {
+    background-color: #c3eaff;
+    color: #444;
+}
+
+.display.dark-mode {
+    background-color: #fff;
+    color: black;
+}
+
+
+.Dark.dark-mode {
+    background-color: black;
+}
+
+#result.dark-mode {
+    background-color: #adf9e7;
+    color: #555;
+}
+@media (max-width:400px) {
+    .card {
+        padding: 10px;
+    }
+    button {
+        width: 45px;
+        height: 45px;
+        font-size: 15px;
+        margin: 4px;
+    }
+    .Dark {
+        width: 14px;
+        height: 14px;
+       margin-top: 5px;
+    }
+}
